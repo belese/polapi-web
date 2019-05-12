@@ -1,0 +1,34 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+i,span,div {
+  background: #eee;
+  margin: 1px;
+  padding: 5px 10px;
+  vertical-align : middle;
+}
+html, body {
+  height: 100%;
+}
+
+text {
+  width : 100%;
+}
+
+li {
+    margin: 1px;
+}
+
+.page {
+    height: 100%;
+}
+
+.app {
+   margin: auto;
+}
+
+.sortable-ghost {
+  opacity: .6;
+}

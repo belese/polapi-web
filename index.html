@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pilaroid</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/pilaroid.css">
+
+  <script src="./libs/Sortable.js"></script>
+  <script src="./libs/qrcode.min.js"></script>
+  <script src="./libs/Pilaroid.js"></script>
+</head>
+<body>
+<div id="page" class="container col-md-3  page">
+    <div id="page2" class="row">
+        <div id="app"  class="app">
+            <div id="personnage" name="personnage" >
+                <i class="fas fa-user-plus fa-2x" id="adduser" onclick="addPersonnage()" ></i>
+            </div>
+            <div>
+                <ul id="infos">
+                    <li><i class="fas fa-user-circle fa-2x"> </i><input type="text" id="narrator" name="name" oninput="getDialoge()"></li>
+                </ul>
+            </div>
+            <div >
+              <ul id="dialogue" class="list-group">
+              </ul>
+            </div>
+            <div>
+                <div id="qrcode">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
