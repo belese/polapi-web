@@ -86,7 +86,7 @@ function getDialoge()  {
             var data = element.split('|');
             var faceid = order.indexOf(data[0]);
             var foo = document.getElementById(data[1]);
-            var text = foo.value;
+            var text = encodeURI(foo.value);
             texts = texts + "|"  + faceid.toString()+text;
         });
 
