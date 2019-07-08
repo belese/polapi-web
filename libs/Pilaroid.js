@@ -87,6 +87,7 @@ function getDialoge()  {
             var faceid = order.indexOf(data[0]);
             var foo = document.getElementById(data[1]);
             var text = encodeURI(foo.value);
+            console.log(text);
             texts = texts + "|"  + faceid.toString()+text;
         });
 
