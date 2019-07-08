@@ -81,7 +81,7 @@ function refresh() {
 function getDialoge()  {
     var sorted = refresh();
     var narrator=document.getElementById("narrator");
-    texts="n"+narrator.value
+    texts="n"+encodeURI(narrator.value);
     sorted.forEach(function(element, index, array) {
             var data = element.split('|');
             var faceid = order.indexOf(data[0]);
